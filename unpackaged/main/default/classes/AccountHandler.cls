@@ -1,9 +1,14 @@
 public class AccountHandler {
+
     public static void test(){
-        System.debug('Starting AccountHandler - logging enabled');
+        System.debug('AccountHandler initialized - ready for use');
     }
-    // Raj: Added getAccounts query method
-    public static List<Account> getAccounts() {
-        return [SELECT Id, Name FROM Account LIMIT 100];
+
+    // Sarah: Added createAccount method
+    public static Account createAccount(String name) {
+        Account acc = new Account(Name = name);
+        insert acc;
+        return acc;
     }
+
 }
