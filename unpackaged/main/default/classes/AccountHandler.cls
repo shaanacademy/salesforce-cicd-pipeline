@@ -1,7 +1,6 @@
 public class AccountHandler {
 
     public static void test(){
-        System.debug('***TESTING***');
         System.debug('AccountHandler initialized - ready for use');
     }
 
@@ -11,6 +10,5 @@ public class AccountHandler {
         insert acc;
         return acc;
     }
-    
 
 }
